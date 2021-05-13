@@ -1,0 +1,11 @@
+#define PWM_PIN 10
+void setup()
+{
+pinMode(PWM_PIN, OUTPUT);
+analogWrite(PWM_PIN, 1); //Unlocking electric control
+delay(5000); 
+}
+void loop()
+{
+analogWrite(PWM_PIN, 143); //adjust speed
+}
